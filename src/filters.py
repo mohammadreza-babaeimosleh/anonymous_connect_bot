@@ -4,6 +4,12 @@ from src.bot import bot
 
 
 class IsAdmin(telebot.custom_filters.SimpleCustomFilter):
+    """class to create filters
+
+    Returns:
+        bool: check condition for filtering
+    """
+
     key = "is_admin"
 
     @staticmethod
